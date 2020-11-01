@@ -4,3 +4,34 @@ p {
   font-style: italic;
   line-height: 22px;
 }
+
+
+/* 
+colors 
+RGB background-color;rgb numeric vaule
+
+Hex codes 
+base 16 c rgb 
+
+Color names 
+/* type of selectors 
+Html element 
+id#
+class (.)
+*/
+
+/* colors
+color-font
+background-color-element */
+
+h1 { 
+  text-align: center;/* left, center, right, justify */
+  text-transform: capitalize; /* upper case lower case */
+  text-decoration: underline;  /* none, underline,*/
+  line-height: 120px; /* number, px vaule */
+  font-weight: bold; /*normal, bold*/
+  font style:italic; /* regular, italic*/
+  font family:unbuntu, arial, sans-serif, serif
+
+
+}
