@@ -7,6 +7,19 @@
 - Intro to JavaScript
 - DOM Manipulation
 
+
+By Id
+document.getElementByID("david")
+
+BY Tag
+document.getElementsByTagname ("li")
+
+By Class
+document.getElementsByClassName ("")
+By Selector 
+
+document.getElementsBy
+
 ### References
 
 - http://eloquentjavascript.net/13_dom.html
