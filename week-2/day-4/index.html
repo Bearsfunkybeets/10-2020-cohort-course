@@ -5,49 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2D4</title>
     <style>
+
         #imageslider {
             display: flex;
             border: 4px solid red
-
+            
         }
+        
         #window  {
         overflow: hidden;
+        position: center;
         width: 500px;
         height: 400px;
+        margin: auto;
         border: 3px solid blue   
-
         }
+
+    }
+
+
+    
+.container {
+  height: 500px;
+  position: relative;
+  border: 3px solid black;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ /* The animation code */
+ @keyframes example {
+         from {transform: translateX(0px);}
+         to {transform: translateX(-500px);}
+       }
+       
+      
+
+       #imageSlider2{
+        display:flex;  
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count:infinite;
+        margin: auto;
+       } 
+
+
+       
+      
+
+</style>
+
+<div class="container">
+  <div class="center">
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+
+  </div>
+</div> 
+
+
+
     </style>
 </head>
 <body>
 
-   <div id="window">
-<div id= "imageslider">
-<img width="500px" height="400px" src="https://treesforlife.org.uk/wp-content/uploads/2019/07/Brown-bear-pixabay.jpg" alt="">
-<img width="500px" height="400px" src="https://treesforlife.org.uk/wp-content/uploads/2019/07/Brown-bear-pixabay.jpg" alt="">
-<img width="500px" height="400px" src="http://www.reportingday.com/wp-content/uploads/2018/07/Brown-Bear-Images.jpg" alt="">
-<img width="500px" height="400px" src="https://wallup.net/wp-content/uploads/2016/01/30094-bears-nature-animals-Grizzly_bear-Grizzly_Bears.jpg" alt="">
 
-</div>
+    <div id="window2" style="background-color:black; width: 500px; height: 300px; margin: 0 auto; overflow:hidden;" >
+        <div id="imageSlider2" style="display:flex;">
+          <img width="500px" height="400px" src="./bear1.jpg"alt=""> 
+          <img width="500px" height="400px" src="./bear2.jpg" alt="">
+          <img width="500px" height="400px" src="./bear3.jpg"alt="">
+         </div>
+      </div>
+    
+<div id="window">
+    <div id= "imageslider">
+        <img width="500px" height="400px" src="https://treesforlife.org.uk/wp-content/uploads/2019/07/Brown-bear-pixabay.jpg" alt="">
+        <img width="500px" height="400px" src="http://www.reportingday.com/wp-content/uploads/2018/07/Brown-Bear-Images.jpg" alt="">
+        <img width="500px" height="400px" src="https://treesforlife.org.uk/wp-content/uploads/2019/07/Brown-bear-pixabay.jpg" alt="">
+        <img width="500px" height="400px" src="https://wallup.net/wp-content/uploads/2016/01/30094-bears-nature-animals-Grizzly_bear-Grizzly_Bears.jpg" alt="">
+       
+    </div>
+</div> 
 
- </div> 
- <button oneclick="prevImage()">prev</button>
- <button oneclick="nextImage()">next</button>
+
+   
+
 
  <script>
- var currentPosition = 0;
- var prevImage= function() {
-     currentPosition = currentPosition + 500; 
-     document.getElementById('imageslider').style.transform= 'translateX('+ currentPosition + 'px)'
+
+var currentPosition = 0;
+
+var prevImage = function() {
+    currentPosition = currentPosition + 500; 
+    document.getElementById('imageslider').style.transform = 'translateX(' + currentPosition + 'px)';
+
 }    
 
-var nextImage= function() {
-     currentPosition = currentPosition - 500; 
-     document.getElementById('imageslider').style.transform= 'translateX('+ currentPosition + 'px)'
+var nextImage = function() {
+    currentPosition = currentPosition - 500; 
+    document.getElementById('imageslider').style.transform = 'translateX(' + currentPosition + 'px)';
+
 }    
- setTimeout(nextImage,1000)
- setTimeout(nextImage,2000)
- setTimeout(nextImage,3000)
+
+if (1 < 4) {
+      var outcome = "if block";
+}
+
+
+setTimeout(nextImage,1000);
+setTimeout(nextImage,2000);
+setTimeout(nextImage,3000);
+
+
+setTimeout(prevImage,3000);
+setTimeout(prevImage,2000);
+setTimeout(prevImage,1000);
+
+
  </script>
+    
 </body>
 </html>
