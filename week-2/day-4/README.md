@@ -76,6 +76,6 @@ For a challenge, try implementing any or all of the bullets below
 - Center the carousel window in the middle of screen using margin
 - Use position absolute and position relative to move the buttons inside of the window div for users to click
 - If you do not use the above,  center the buttons underneathe the center carousel window
-- Add some conditional logic to your javascript code to prevent users from translating the imageSlider too far in either direction
+- Add some conditional logic to your javascript code to prevent users from translating the imageSlider too far in either  direction
 - Add console logs to see what your current position is any time the prevImage or nextImage functions are invoked
 - Automate your js carousel with setTimeout, and make it move forwards then backwards once it renders the last image on the screen (see video)
